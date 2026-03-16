@@ -1,0 +1,9 @@
+services:
+  vietnam-itinerary:
+    image: nginx:alpine
+    container_name: vietnam-itinerary
+    restart: unless-stopped
+    volumes:
+      - /mnt/user/data/web-vietnam:/usr/share/nginx/html:ro
+    ports:
+      - "8088:80"
