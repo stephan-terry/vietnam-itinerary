@@ -1,0 +1,60 @@
+﻿
+<footer class="footer">
+  <i class="fas fa-heart" style="color:var(--viet-red);"></i> Have an incredible trip to Vietnam! <i class="fas fa-heart" style="color:var(--viet-red);"></i>
+</footer>
+
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• SCRIPTS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<script>
+// Collapsible day cards
+function toggleCard(header) {
+  const body = header.nextElementSibling;
+  header.classList.toggle('collapsed');
+  if (header.classList.contains('collapsed')) {
+    body.style.maxHeight = '0';
+    body.style.opacity = '0';
+    body.style.padding = '0 20px';
+  } else {
+    body.style.maxHeight = body.scrollHeight + 40 + 'px';
+    body.style.opacity = '1';
+    body.style.padding = '';
+    // Allow natural height after animation
+    setTimeout(() => { body.style.maxHeight = 'none'; }, 400);
+  }
+}
+
+// Lightbox
+function openLightbox(img) {
+  const lb = document.getElementById('lightbox');
+  const lbImg = document.getElementById('lightbox-img');
+  const lbCaption = document.getElementById('lightbox-caption');
+  // Load full-res version
+  const src = img.src.replace(/w=\d+/, 'w=1400').replace(/q=\d+/, 'q=90');
+  lbImg.src = src;
+  lbImg.alt = img.alt;
+  lbCaption.textContent = img.alt;
+  lb.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('open');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+
+// Active nav highlight on scroll
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-inner a');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      navLinks.forEach(a => a.classList.remove('active'));
+      const link = document.querySelector(`.nav-inner a[href="#${entry.target.id}"]`);
+      if (link) link.classList.add('active');
+    }
+  });
+}, { rootMargin: '-20% 0px -70% 0px' });
+sections.forEach(s => observer.observe(s));
+</script>
+
+</body>
+</html>
