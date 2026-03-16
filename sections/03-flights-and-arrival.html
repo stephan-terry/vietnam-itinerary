@@ -1,27 +1,213 @@
 <section class="section" id="flights">
-  <div class="section-head"><i class="fas fa-plane"></i> Flights &amp; Arrival</div>
+  <div class="section-head"><i class="fas fa-plane"></i> Flight Reference</div>
 
+  <!-- ── OUTBOUND: JFK → HAN ── -->
+  <div class="day-card border-navy">
+    <div class="day-header bg-navy" onclick="toggleCard(this)">
+      <i class="fas fa-plane-departure"></i>
+      <h3>Outbound &mdash; JFK &rarr; Hanoi (HAN)</h3>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="day-body">
+      <div class="day-chips">
+        <span class="chip chip-navy"><i class="fas fa-calendar"></i> Sun, June 7</span>
+        <span class="chip chip-blue"><i class="fas fa-clock"></i> 23 hr 45 min</span>
+        <span class="chip chip-gold"><i class="fas fa-exchange-alt"></i> 1 Stop (ICN)</span>
+        <span class="chip chip-green"><i class="fas fa-tag"></i> From $814</span>
+      </div>
+
+      <table class="schedule">
+        <tr>
+          <td class="time-col">1:30 AM</td>
+          <td class="detail-col"><i class="fas fa-plane-departure"></i> <strong>Depart JFK &mdash; New York</strong><div class="sub">John F. Kennedy International Airport (JFK)<br>Terminal check: Asiana Airlines</div></td>
+          <td class="cost-col">&mdash;</td>
+        </tr>
+        <tr>
+          <td class="time-col"><i class="fas fa-arrow-down"></i></td>
+          <td class="detail-col"><strong>Flight OZ 223 &mdash; Asiana Airlines</strong><div class="sub">JFK &rarr; ICN (Incheon, South Korea)<br>Layover at Incheon International Airport</div></td>
+          <td class="cost-col">&mdash;</td>
+        </tr>
+        <tr>
+          <td class="time-col"><i class="fas fa-arrow-down"></i></td>
+          <td class="detail-col"><strong>Flight OZ 729 &mdash; Asiana Airlines</strong><div class="sub">ICN &rarr; HAN (Noi Bai, Hanoi)</div></td>
+          <td class="cost-col">&mdash;</td>
+        </tr>
+        <tr>
+          <td class="time-col">12:15 PM+1</td>
+          <td class="detail-col"><i class="fas fa-plane-arrival"></i> <strong>Arrive HAN &mdash; Hanoi</strong><div class="sub">Noi Bai International Airport (HAN)<br>Arrives <strong>Mon, June 8</strong> local time</div></td>
+          <td class="cost-col">&mdash;</td>
+        </tr>
+      </table>
+
+      <table class="schedule" style="margin-top:12px;">
+        <tr>
+          <td class="time-col"><i class="fas fa-building"></i></td>
+          <td class="detail-col"><strong>Airline</strong><div class="sub">Asiana Airlines (Star Alliance)</div></td>
+          <td class="cost-col">&mdash;</td>
+        </tr>
+        <tr>
+          <td class="time-col"><i class="fas fa-suitcase"></i></td>
+          <td class="detail-col"><strong>Baggage</strong><div class="sub">1 free carry-on + <strong>2 free checked bags</strong> included</div></td>
+          <td class="cost-col">&mdash;</td>
+        </tr>
+        <tr>
+          <td class="time-col"><i class="fas fa-dollar-sign"></i></td>
+          <td class="detail-col"><strong>Pricing</strong><div class="sub"><strong>$814</strong> lowest (Justfly / FlightHub) &nbsp;&bull;&nbsp; <strong>$842</strong> direct via Asiana Airlines</div></td>
+          <td class="cost-col">$814&ndash;$842</td>
+        </tr>
+        <tr>
+          <td class="time-col"><i class="fas fa-chart-line"></i></td>
+          <td class="detail-col"><strong>Price Insight</strong><div class="sub">$814 is <strong>low for Economy</strong> &mdash; $149 cheaper than usual ($960&ndash;$1,050 typical)</div></td>
+          <td class="cost-col"><span style="color:var(--viet-green);font-weight:700;">Low</span></td>
+        </tr>
+      </table>
+
+      <div class="day-chips" style="margin-top:14px;">
+        <a href="https://www.google.com/travel/flights/s/HgqxWZqmA5DpQJ5f6" target="_blank" rel="noopener" class="chip chip-blue" style="text-decoration:none;"><i class="fas fa-external-link-alt"></i> View on Google Flights</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── RETURN: SGN → JFK ── -->
+  <div class="day-card border-red">
+    <div class="day-header bg-red" onclick="toggleCard(this)">
+      <i class="fas fa-plane-arrival"></i>
+      <h3>Return &mdash; Ho Chi Minh City (SGN) &rarr; JFK</h3>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="day-body">
+      <div class="day-chips">
+        <span class="chip chip-red"><i class="fas fa-calendar"></i> Wed, June 17</span>
+        <span class="chip chip-blue"><i class="fas fa-clock"></i> 22 hr 25 min</span>
+        <span class="chip chip-gold"><i class="fas fa-exchange-alt"></i> 1 Stop (ICN)</span>
+        <span class="chip chip-green"><i class="fas fa-tag"></i> From $558</span>
+      </div>
+
+      <table class="schedule">
+        <tr>
+          <td class="time-col">11:45 PM</td>
+          <td class="detail-col"><i class="fas fa-plane-departure"></i> <strong>Depart SGN &mdash; Ho Chi Minh City</strong><div class="sub">Tan Son Nhat International Airport (SGN)<br>Terminal check: Korean Air</div></td>
+          <td class="cost-col">&mdash;</td>
+        </tr>
+        <tr>
+          <td class="time-col"><i class="fas fa-arrow-down"></i></td>
+          <td class="detail-col"><strong>Flight KE 476 &mdash; Korean Air</strong><div class="sub">SGN &rarr; ICN (Incheon, South Korea)<br>Layover at Incheon International Airport</div></td>
+          <td class="cost-col">&mdash;</td>
+        </tr>
+        <tr>
+          <td class="time-col"><i class="fas fa-arrow-down"></i></td>
+          <td class="detail-col"><strong>Flight KE 81 &mdash; Korean Air / Delta</strong><div class="sub">ICN &rarr; JFK (New York)</div></td>
+          <td class="cost-col">&mdash;</td>
+        </tr>
+        <tr>
+          <td class="time-col">11:10 AM+1</td>
+          <td class="detail-col"><i class="fas fa-plane-arrival"></i> <strong>Arrive JFK &mdash; New York</strong><div class="sub">John F. Kennedy International Airport<br>Arrives <strong>Thu, June 18</strong> local time</div></td>
+          <td class="cost-col">&mdash;</td>
+        </tr>
+      </table>
+
+      <table class="schedule" style="margin-top:12px;">
+        <tr>
+          <td class="time-col"><i class="fas fa-building"></i></td>
+          <td class="detail-col"><strong>Airlines</strong><div class="sub">Korean Air + Delta (codeshare, SkyTeam Alliance)</div></td>
+          <td class="cost-col">&mdash;</td>
+        </tr>
+        <tr>
+          <td class="time-col"><i class="fas fa-suitcase"></i></td>
+          <td class="detail-col"><strong>Baggage &mdash; Economy Saver ($558)</strong><div class="sub">1 free carry-on &nbsp;&bull;&nbsp; <strong>No free checked bags</strong></div></td>
+          <td class="cost-col">$558</td>
+        </tr>
+        <tr>
+          <td class="time-col"><i class="fas fa-suitcase-rolling"></i></td>
+          <td class="detail-col"><strong>Baggage &mdash; Economy Standard ($608)</strong><div class="sub">1 free carry-on + <strong>2 free checked bags</strong> &nbsp;&bull;&nbsp; Partial refund available</div></td>
+          <td class="cost-col">$608</td>
+        </tr>
+        <tr>
+          <td class="time-col"><i class="fas fa-dollar-sign"></i></td>
+          <td class="detail-col"><strong>Pricing Summary</strong><div class="sub"><strong>$558</strong> Economy Saver (Jettzy / Korean Air) &nbsp;&bull;&nbsp; <strong>$608</strong> Economy Standard &nbsp;&bull;&nbsp; $606 via Delta</div></td>
+          <td class="cost-col">$558&ndash;$608</td>
+        </tr>
+        <tr>
+          <td class="time-col"><i class="fas fa-chart-line"></i></td>
+          <td class="detail-col"><strong>Price Insight</strong><div class="sub">$558 is <strong>low for Economy</strong> &mdash; $149 cheaper than usual ($610&ndash;$1,100 typical)</div></td>
+          <td class="cost-col"><span style="color:var(--viet-green);font-weight:700;">Low</span></td>
+        </tr>
+      </table>
+
+      <div class="day-chips" style="margin-top:14px;">
+        <a href="https://www.google.com/travel/flights/s/EN5zrZESPKReN3va6" target="_blank" rel="noopener" class="chip chip-red" style="text-decoration:none;"><i class="fas fa-external-link-alt"></i> View on Google Flights</a>
+      </div>
+
+      <div class="tip-box" style="margin-top:16px;">
+        <h4><i class="fas fa-lightbulb"></i> Baggage Tip</h4>
+        <ul>
+          <li><strong>Economy Saver</strong> saves $50 but has <strong>no free checked bags</strong> &mdash; you&rsquo;ll pay ~$30&ndash;$60 per bag at the airport.</li>
+          <li><strong>Economy Standard</strong> ($608) includes 2 checked bags + partial refund &mdash; better value if you&rsquo;re bringing souvenirs home.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── QUICK REFERENCE SUMMARY ── -->
+  <div class="day-card border-gold">
+    <div class="day-header bg-gold" onclick="toggleCard(this)">
+      <i class="fas fa-clipboard-list"></i>
+      <h3>Flight Quick Reference</h3>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="day-body">
+      <table class="budget-table">
+        <tr>
+          <td><i class="fas fa-plane-departure"></i></td>
+          <td><strong>Outbound</strong>: JFK &rarr; HAN (via ICN)</td>
+          <td>Sun Jun 7, 1:30 AM</td>
+        </tr>
+        <tr>
+          <td><i class="fas fa-plane-arrival"></i></td>
+          <td><strong>Arrive Hanoi</strong></td>
+          <td>Mon Jun 8, 12:15 PM</td>
+        </tr>
+        <tr>
+          <td><i class="fas fa-plane-departure"></i></td>
+          <td><strong>Return</strong>: SGN &rarr; JFK (via ICN)</td>
+          <td>Wed Jun 17, 11:45 PM</td>
+        </tr>
+        <tr>
+          <td><i class="fas fa-plane-arrival"></i></td>
+          <td><strong>Arrive New York</strong></td>
+          <td>Thu Jun 18, 11:10 AM</td>
+        </tr>
+        <tr>
+          <td><i class="fas fa-building"></i></td>
+          <td><strong>Outbound Airline</strong>: Asiana Airlines (OZ 223 + OZ 729)</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr>
+          <td><i class="fas fa-building"></i></td>
+          <td><strong>Return Airlines</strong>: Korean Air / Delta (KE 476 + KE 81)</td>
+          <td>&mdash;</td>
+        </tr>
+        <tr>
+          <td><i class="fas fa-dollar-sign"></i></td>
+          <td><strong>Total Flight Cost (per person)</strong></td>
+          <td><strong>$1,372&ndash;$1,450</strong></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- ── ORIGINAL ARRIVAL INFO ── -->
   <div class="day-card border-navy">
     <div class="day-header bg-navy" onclick="toggleCard(this)">
       <i class="fas fa-plane"></i>
-      <h3>International Arrival &mdash; Noi Bai Airport (HAN), Hanoi</h3>
+      <h3>Arrival Plan &mdash; Noi Bai Airport (HAN), Hanoi</h3>
       <i class="fas fa-chevron-down"></i>
     </div>
     <div class="day-body">
       <table class="schedule">
         <tr>
-          <td class="time-col"><i class="fas fa-globe"></i></td>
-          <td class="detail-col"><strong>Flight Route</strong><div class="sub">JFK → Hanoi (HAN) one-way international flight for the group itinerary start.</div></td>
-          <td class="cost-col">$842</td>
-        </tr>
-        <tr>
-          <td class="time-col"><i class="fas fa-plane-arrival"></i></td>
-          <td class="detail-col"><strong>Arrival Airport</strong><div class="sub">Noi Bai International Airport (HAN) &mdash; arrival point for the trip before heading into Hanoi's Old Quarter.</div></td>
-          <td class="cost-col">&mdash;</td>
-        </tr>
-        <tr>
           <td class="time-col"><i class="fas fa-route"></i></td>
-          <td class="detail-col"><strong>Finalized Route</strong><div class="sub">Hanoi → Sapa → Da Nang → Ho Chi Minh City<br>Ha Long Bay and Da Lat were removed from the final plan so the trip flows more smoothly north-to-south after Sapa.</div></td>
+          <td class="detail-col"><strong>Finalized Route</strong><div class="sub">Hanoi &rarr; Sapa &rarr; Da Nang &rarr; Ho Chi Minh City<br>Ha Long Bay and Da Lat were removed from the final plan so the trip flows more smoothly north-to-south after Sapa.</div></td>
           <td class="cost-col">&mdash;</td>
         </tr>
         <tr>
